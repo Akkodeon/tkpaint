@@ -5,10 +5,11 @@ __all__ = ["TkPaint"]
 import tkinter as tk
 
 
-class TkPaint(tk.Frame):
-    def __init__(self, master=None):
-        super(TkPaint, self).__init__(master)
-        self.master.title("TkPaint")
+class TkPaint(tk.Tk):
+    def __init__(self):
+        super(TkPaint, self).__init__()
+        self.title("TkPaint")
+        self.geometry("640x480+50+50")
 
 
 if __name__ == "__main__":
